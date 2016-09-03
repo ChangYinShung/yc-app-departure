@@ -1,2 +1,0 @@
-# Plugins
-collect plugins
