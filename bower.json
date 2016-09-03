@@ -1,12 +1,10 @@
 {
-    "name": "cys-angular",
+    "name": "Scripts",
     "authors": [
         "ChangYinShung <changyenshung@gmail.com>"
     ],
     "description": "ddd",
     "main": [
-        "BundleProfile/*.*"
-
     ],
     "license": "MIT",
     "homepage": "",
