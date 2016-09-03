@@ -1,0 +1,68 @@
+{
+  "name": "futther-software",
+  "authors": [
+    "ChangYinShung <changyenshung@gmail.com>"
+  ],
+  "description": "Userful Plugins",
+  "main": "",
+  "license": "Commerical License",
+  "homepage": "",
+  "private": true,
+  "ignore": [
+    "**/.*",
+    "node_modules",
+    "bower_components",
+    "vendor",
+    "test",
+    "tests",
+    "source",
+    "spec",
+    ".bowerrc",
+    ".gitignore",
+    ".jshintignore",
+    ".jshintrc",
+    "bower.json",
+    "gruntfile.js",
+    "package.json",
+    "README.md"
+  ],
+  "dependencies": {
+    "angular-google-maps": "^2.3.3",
+    "cropperjs": "^0.7.2",
+    "ng-cropper": "^0.4.1",
+    "angular-bootstrap-multiselect": "^0.4.0",
+    "angular-validation": "^1.4.2",
+    "kendo-ui": "kendo-ui-core#^2016.2.812",
+    "angular-truncate": "*"
+  },
+  "install": {
+    "base": "Vendor",
+    "path": {
+      "css": "{name}/css",
+      "js": "{name}/js",
+      "/[jpg|png]$/": "{name}/css/bootstrap"
+    },
+    "sources": {
+      "angular-validation": [
+        "GitLibs/angular-validation/dist/angular-validation-rule.js",
+        "GitLibs/angular-validation/dist/angular-validation.js"
+      ],
+      "kendo-ui": [
+        "GitLibs/kendo-ui/src/js/kendo.ui.core.js",
+        "GitLibs/kendo-ui/src/js/cultures/kendo.culture.zh-TW.js",
+        "GitLibs/kendo-ui/src/styles/web/kendo.bootstrap.css",
+        "GitLibs/kendo-ui/src/styles/web/kendo.default.css",
+        "GitLibs/kendo-ui/src/styles/web/kendo.common.core.css",
+        "GitLibs/kendo-ui/src/styles/web/kendo.common-bootstrap.core.css",
+        "GitLibs/kendo-ui/src/styles/web/Bootstrap/*.png"
+      ]
+    },
+    "ignore": [
+      "jquery",
+      "angular",
+      "lodash",
+      "bootstrap",
+      "js"
+    ]
+  }
+}
