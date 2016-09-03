@@ -10,7 +10,6 @@
     "homepage": "",
     "private": false,
     "ignore": [
-        "**/.*",
         "node_modules",
         "bower_components",
         "docs",
