@@ -33,7 +33,7 @@
     "angular-bootstrap-multiselect": "^0.4.0",
     "angular-validation": "^1.4.2",
     "kendo-ui": "kendo-ui-core#^2016.2.812",
-    "angular-truncate": "*"
+    "angular-ellipsis": "^0.1.6"
   },
   "install": {
     "base": "Vendor",

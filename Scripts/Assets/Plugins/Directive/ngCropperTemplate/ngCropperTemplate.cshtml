@@ -1,0 +1,41 @@
+﻿
+@{
+    Layout = null;
+}
+<div class="row">
+    <div class="col-xs-12">
+        <button type="button" class=" btn btn-primary" ng-click="Ctrl.EditButton();" ng-show="Ctrl.HasImg">
+            <span class="glyphicon glyphicon-edit" aria-hidden="true" ng-hide="Ctrl.EditMode"></span>
+            <span class="glyphicon glyphicon-trash" aria-hidden="true" ng-show="Ctrl.EditMode"></span>
+            {{Ctrl.EditButtonText}}
+        </button>
+        <button class="btn btn-primary" ng-click="Ctrl.Preview();" ng-show="Ctrl.EditMode"> 
+            <span class="glyphicon glyphicon-floppy-disk" aria-hidden="true"></span>存檔
+        </button>
+        <button type="button" class="btn btn-primary" ng-click="Ctrl.LoadButton()" ng-show="!Ctrl.EditMode">
+            <span class="glyphicon glyphicon-folder-open" aria-hidden="true"></span>讀取圖片
+        </button>
+        <input id="FileLoader" type="file" class="btn btn-primary" onchange="angular.element(this).scope().Ctrl.OnFile(this.files[0]);this.value=''" style="display:none">
+
+        <button class="btn btn-primary pull-right" ng-click="Ctrl.ZoomTo(0.8)" ng-show="Ctrl.EditMode"><span class="glyphicon glyphicon glyphicon-refresh"></span></button>
+        <button class="btn btn-primary pull-right" ng-click="Ctrl.Zoom(-0.1)" ng-show="Ctrl.EditMode"><span class="glyphicon glyphicon-zoom-out"></span></button>
+        <button class="btn btn-primary pull-right" ng-click="Ctrl.Zoom(0.1)" ng-show="Ctrl.EditMode"><span class="glyphicon glyphicon-zoom-in"></span></button>
+    </div>
+</div>
+<hr />
+<div class="row">
+    <div class="col-xs-12">
+        <div ng-if="Ctrl.DataUrl" class="img-container">
+            <img class="img-responsive"
+                 ng-if="Ctrl.DataUrl"
+                 ng-src="{{Ctrl.DataUrl}}"
+                 ng-error="Ctrl.Error()"
+                 ng-cropper
+                 ng-cropper-proxy="cropperProxy"
+                 ng-cropper-show="showEvent"
+                 ng-cropper-hide="hideEvent"
+                 ng-cropper-options="Ctrl.options">
+        </div>
+    </div>
+</div>
+
