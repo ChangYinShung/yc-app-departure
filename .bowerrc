@@ -1,5 +1,5 @@
 {
-    "directory": "Scripts/",
+    "directory": "",
     "ignoredDependencies": [
         "jquery"
     ]
