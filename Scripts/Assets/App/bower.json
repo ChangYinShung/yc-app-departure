@@ -1,0 +1,57 @@
+{
+  "name": "futther-software",
+  "authors": [
+    "ChangYinShung <changyenshung@gmail.com>"
+  ],
+  "description": "TimelineJS,Speech(youtube),Article,News,Activity(include SignUp)",
+  "main": "",
+  "license": "Commerical License",
+  "homepage": "",
+  "private": true,
+  "ignore": [
+    "**/.*",
+    "node_modules",
+    "bower_components",
+    "vendor",
+    "test",
+    "tests",
+    "source",
+    "spec",
+    ".bowerrc",
+    ".gitignore",
+    ".jshintignore",
+    ".jshintrc",
+    "bower.json",
+    "gruntfile.js",
+    "package.json",
+    "README.md"
+  ],
+  "dependencies": {
+    "angular": "1.5.7",
+    "angular-sanitize": "1.5.7",
+    "angular-animate": "1.5.7",
+    "restangular": "1.5.2",
+    "angular-ui-router": "1.0.0-alpha.1",
+    "angular-ui-router-uib-modal": "^0.0.8",
+    "angular-bootstrap": "^2.0.0",
+    "angular-toastr": "^1.7.0",
+    "angular-odata-resources": "^1.0.22",
+    "angular-local-storage": "^0.2.7",
+    "json-formatter": "^0.6.0",
+    "oclazyload": "^1.0.9",
+    "angular-simple-logger": "^0.1.7",
+    "angular-hotkeys": "chieffancypants/angular-hotkeys#^1.7.0",
+    "angular-ui-router-tabs": "^2.0.2",
+    "sprintf": "^1.0.3"
+  },
+  "install": {
+    "path": "Vendor",
+    "sources": {
+        "angular-odata-resources": "GitLibs/angular-odata-resources/build/odataresources.js",
+        "sprintf": ["GitLibs/sprintf/src/sprintf.js","GitLibs/sprintf/src/angular-sprintf.js"]
+    },
+    "ignore": [
+      "jquery"
+    ]
+  }
+}
