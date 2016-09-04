@@ -1,18 +1,20 @@
 {
-    "name": "Scripts",
-    "authors": [
-        "ChangYinShung <changyenshung@gmail.com>"
-    ],
-    "description": "ddd",
-    "main": [
-    ],
-    "license": "MIT",
-    "homepage": "",
-    "private": false,
-    "ignore": [
-        "node_modules",
-        "bower_components",
-        "docs",
-        "LICENSE"
-    ]
+  "name": "Scripts",
+  "authors": [
+    "ChangYinShung <changyenshung@gmail.com>"
+  ],
+  "description": "ddd",
+  "main": [],
+  "license": "MIT",
+  "homepage": "",
+  "private": false,
+  "ignore": [
+    "node_modules",
+    "bower_components",
+    "docs",
+    "LICENSE"
+  ],
+  "dependencies": {
+    "Scripts": "cys-angular#*"
+  }
 }

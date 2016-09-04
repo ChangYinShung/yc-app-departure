@@ -1,0 +1,13 @@
+{
+  "name": "cys-angular",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "postinstall": "bower install",
+    "install":"cd ./Web/Scripts/Assets/App && bower install && bower-installer && cd ../Plugins && bower install && bower-installer"
+  },
+  "author": "",
+  "license": "ISC"
+  
+}
